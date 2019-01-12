@@ -1,0 +1,17 @@
+mark{
+	background-color: #e4e4e4;
+}
+
+pre{
+	font-size: larger;
+}
+
+
+code:not([class]){
+	font-size: larger;
+	background-color: #E4E4E4;
+}
+
+code{
+	background-color: #EBE8FF;
+}

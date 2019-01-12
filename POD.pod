@@ -1,0 +1,66 @@
+=encoding utf8
+=pod
+
+=head1 NAME
+
+POD(Plain Old Documentation)
+
+=head1 DESCRIPTION
+
+perl진영의 문서파일 L<pod|https://perldoc.perl.org/perlpod.html>에 대해 살펴본다. 
+
+이 문서는 L<pod2html|https://perldoc.perl.org/pod2html.html>를 이용해 pod파일을 html로 변환시킨 결과물이다. (css, js 추가 등 별도의 작업 필요)
+
+=head1 COMMANDS
+
+명령어 앞줄과 뒷줄에 공백을 넣어주자.
+
+
+=head2 =pod, =cut
+
+각각 pod문서의 시작과 끝을 알린다.
+
+=head2 =head1 text, =head2 text, =head3 text, =head4 text
+
+문단 사이에 삽입되어 제목을 나타낸다. 숫자가 커질수록 제목의 크기가 점점 작아진다. 숫자의 최대값은 4다.
+
+문서를 작성할 때 head1 다음 head2를 건너뛰지 않도록 한다. (인덱스가 깨져버림)
+
+=head2 =over, =item text, =back
+
+M<=over>와 M<=back>은 리스트의 시작과 끝을 알린다.
+
+M<=item text> B<text>를 이름으로 하는 요소를 생성한다. 첫 번째 요소의 B<text>자리가 B<* >로 시작하면 순서가 없는 리스트를 구성하게 된다.
+
+
+=begin html
+
+<pre>
+ex)
+<code class="plaintext">
+ =over
+
+ =item * text1 
+
+ =item * text2
+
+ =back
+</code> 
+=====>>>>>
+</pre>
+
+=end html
+
+=over
+
+=item * text1
+
+=item * text2
+
+=back
+
+=head2 M<=begin format>, M<=end format>, M<=for targetname text>
+
+
+
+=cut
