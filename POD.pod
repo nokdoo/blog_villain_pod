@@ -81,4 +81,8 @@ pod의 기본 인코딩은 US-ASCII이기 때문에 한글이 깨져버린다. =
  
 이 외의 formatting은 L<여기|https://perldoc.perl.org/perlpod.html#Formatting-Codes>에서 확인할 수 있다.
 
+=head1 SEE ALSO
+
+이 페이지를 위해 작성된 pod를 확인하려면 L<여기|https://raw.githubusercontent.com/nokdoo/blog_villain_pod/master/POD.pod>로...
+
 =cut
