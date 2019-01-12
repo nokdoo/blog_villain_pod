@@ -7,7 +7,11 @@ my @input = @ARGV;
 
 die "Number of arguments ".scalar(@input) if scalar(@input) != 1;
 
-my @options = qw{ --nobacklink --css=./p2h.css };
+my @options = qw[
+	--nobacklink 
+	--css=./p2h.css 
+	--backlink
+	];
 
 my $pod_file = $ARGV[0];
 $pod_file =~ qr/(.*)\.pod/;

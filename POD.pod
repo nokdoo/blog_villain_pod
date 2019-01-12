@@ -28,9 +28,9 @@ perl진영의 문서파일 L<pod|https://perldoc.perl.org/perlpod.html>에 대�
 
 =head2 =over, =item text, =back
 
-M<=over>와 M<=back>은 리스트의 시작과 끝을 알린다.
+C<=over>와 C<=back>은 리스트의 시작과 끝을 알린다.
 
-M<=item text> B<text>를 이름으로 하는 요소를 생성한다. 첫 번째 요소의 B<text>자리가 B<* >로 시작하면 순서가 없는 리스트를 구성하게 된다.
+C<=item text> B<text>를 이름으로 하는 요소를 생성한다. 첫 번째 요소의 B<text>자리가 B<* >로 시작하면 순서가 없는 리스트를 구성하게 된다.
 
 
 =begin html
@@ -59,8 +59,26 @@ ex)
 
 =back
 
-=head2 M<=begin format>, M<=end format>, M<=for targetname text>
+=head2 =begin format, =end format, for targetname text
 
+pod를 벗어나 새로운 C<format>영역을 만든다. 그 내용은 C<=begin>과 C<=end> 사이 또는 C<=for>의 text부분에 들어간다. 둘의 차이는 적용범위다.
 
+(format은 text/data를 나타낸다고 하는데.. html외의 다른 포맷은 모르겠다...)
+
+=head2 =encoding encodingname
+
+pod에 적용할 인코딩을 선택한다. 전체 pod에 적용되니 한 번만 입력하면 된다.
+
+pod의 기본 인코딩은 US-ASCII이기 때문에 한글이 깨져버린다. =encoding utf8을 사용하면 해결된다.
+
+=head1 Formatting
+
+텍스트에 볼드, 링크 등의 추가적인 효과를 넣어준다.
+
+=head2 IE<lt>textE<gt>, BE<lt>textE<gt>, CE<lt>textE<gt>, LE<lt>text|scheme:...E<gt>, EE<lt>escapeE<gt>
+
+각각 I<italic>, B<bold>, C<code>, L<link|http://www.blog_villain.com>, C<< B<E<lt>> >> (=EE<lt>escapeE<gt>)을 나타낸다.
+ 
+이 외의 formatting은 L<여기|https://perldoc.perl.org/perlpod.html#Formatting-Codes>에서 확인할 수 있다.
 
 =cut

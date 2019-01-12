@@ -8,7 +8,7 @@
 <link rev="made" href="mailto:nokdoot@nokdoot-desktop.(none)" />
 </head>
 
-<body>
+<body id="_podtop_">
 
 
 
@@ -20,22 +20,28 @@
       <li><a href="#pod-cut">=pod, =cut</a></li>
       <li><a href="#head1-text-head2-text-head3-text-head4-text">=head1 text, =head2 text, =head3 text, =head4 text</a></li>
       <li><a href="#over-item-text-back">=over, =item text, =back</a></li>
-      <li><a href="#begin-format-end-format-for-targetname-text">=begin format, =end format, =for targetname text</a></li>
+      <li><a href="#begin-format-end-format-for-targetname-text">=begin format, =end format, for targetname text</a></li>
+      <li><a href="#encoding-encodingname">=encoding encodingname</a></li>
+    </ul>
+  </li>
+  <li><a href="#Formatting">Formatting</a>
+    <ul>
+      <li><a href="#Itext-Btext-Ctext-Ltext-scheme:...-Eescape">I&lt;text&gt;, B&lt;text&gt;, C&lt;text&gt;, L&lt;text|scheme:...&gt;, E&lt;escape&gt;</a></li>
     </ul>
   </li>
 </ul>
 
-<h1 id="NAME">NAME</h1>
+<a href="#_podtop_"><h1 id="NAME">NAME</h1></a>
 
 <p>POD(Plain Old Documentation)</p>
 
-<h1 id="DESCRIPTION">DESCRIPTION</h1>
+<a href="#_podtop_"><h1 id="DESCRIPTION">DESCRIPTION</h1></a>
 
 <p>perl&#xC9C4;&#xC601;&#xC758; &#xBB38;&#xC11C;&#xD30C;&#xC77C; <a target=_blank href="https://perldoc.perl.org/perlpod.html">pod</a>&#xC5D0; &#xB300;&#xD574; &#xC0B4;&#xD3B4;&#xBCF8;&#xB2E4;.</p>
 
 <p>&#xC774; &#xBB38;&#xC11C;&#xB294; <a target=_blank href="https://perldoc.perl.org/pod2html.html">pod2html</a>&#xB97C; &#xC774;&#xC6A9;&#xD574; pod&#xD30C;&#xC77C;&#xC744; html&#xB85C; &#xBCC0;&#xD658;&#xC2DC;&#xD0A8; &#xACB0;&#xACFC;&#xBB3C;&#xC774;&#xB2E4;. (css, js &#xCD94;&#xAC00; &#xB4F1; &#xBCC4;&#xB3C4;&#xC758; &#xC791;&#xC5C5; &#xD544;&#xC694;)</p>
 
-<h1 id="COMMANDS">COMMANDS</h1>
+<a href="#_podtop_"><h1 id="COMMANDS">COMMANDS</h1></a>
 
 <p>&#xBA85;&#xB839;&#xC5B4; &#xC55E;&#xC904;&#xACFC; &#xB4B7;&#xC904;&#xC5D0; &#xACF5;&#xBC31;&#xC744; &#xB123;&#xC5B4;&#xC8FC;&#xC790;.</p>
 
@@ -51,9 +57,9 @@
 
 <h2 id="over-item-text-back">=over, =item text, =back</h2>
 
-<p><mark>=over</mark>&#xC640; <mark>=back</mark>&#xC740; &#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xC2DC;&#xC791;&#xACFC; &#xB05D;&#xC744; &#xC54C;&#xB9B0;&#xB2E4;.</p>
+<p><code>=over</code>&#xC640; <code>=back</code>&#xC740; &#xB9AC;&#xC2A4;&#xD2B8;&#xC758; &#xC2DC;&#xC791;&#xACFC; &#xB05D;&#xC744; &#xC54C;&#xB9B0;&#xB2E4;.</p>
 
-<p><mark>=item text</mark> <b>text</b>&#xB97C; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xD558;&#xB294; &#xC694;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;. &#xCCAB; &#xBC88;&#xC9F8; &#xC694;&#xC18C;&#xC758; <b>text</b>&#xC790;&#xB9AC;&#xAC00; <b>* </b>&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xBA74; &#xC21C;&#xC11C;&#xAC00; &#xC5C6;&#xB294; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;.</p>
+<p><code>=item text</code> <b>text</b>&#xB97C; &#xC774;&#xB984;&#xC73C;&#xB85C; &#xD558;&#xB294; &#xC694;&#xC18C;&#xB97C; &#xC0DD;&#xC131;&#xD55C;&#xB2E4;. &#xCCAB; &#xBC88;&#xC9F8; &#xC694;&#xC18C;&#xC758; <b>text</b>&#xC790;&#xB9AC;&#xAC00; <b>* </b>&#xB85C; &#xC2DC;&#xC791;&#xD558;&#xBA74; &#xC21C;&#xC11C;&#xAC00; &#xC5C6;&#xB294; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xAD6C;&#xC131;&#xD558;&#xAC8C; &#xB41C;&#xB2E4;.</p>
 
 <pre>
 ex)
@@ -79,7 +85,27 @@ ex)
 </li>
 </ul>
 
-<h2 id="begin-format-end-format-for-targetname-text"><mark>=begin format</mark>, <mark>=end format</mark>, <mark>=for targetname text</mark></h2>
+<h2 id="begin-format-end-format-for-targetname-text">=begin format, =end format, for targetname text</h2>
+
+<p>pod&#xB97C; &#xBC97;&#xC5B4;&#xB098; &#xC0C8;&#xB85C;&#xC6B4; <code>format</code>&#xC601;&#xC5ED;&#xC744; &#xB9CC;&#xB4E0;&#xB2E4;. &#xADF8; &#xB0B4;&#xC6A9;&#xC740; <code>=begin</code>&#xACFC; <code>=end</code> &#xC0AC;&#xC774; &#xB610;&#xB294; <code>=for</code>&#xC758; text&#xBD80;&#xBD84;&#xC5D0; &#xB4E4;&#xC5B4;&#xAC04;&#xB2E4;. &#xB458;&#xC758; &#xCC28;&#xC774;&#xB294; &#xC801;&#xC6A9;&#xBC94;&#xC704;&#xB2E4;.</p>
+
+<p>(format&#xC740; text/data&#xB97C; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;&#xACE0; &#xD558;&#xB294;&#xB370;.. html&#xC678;&#xC758; &#xB2E4;&#xB978; &#xD3EC;&#xB9F7;&#xC740; &#xBAA8;&#xB974;&#xACA0;&#xB2E4;...)</p>
+
+<h2 id="encoding-encodingname">=encoding encodingname</h2>
+
+<p>pod&#xC5D0; &#xC801;&#xC6A9;&#xD560; &#xC778;&#xCF54;&#xB529;&#xC744; &#xC120;&#xD0DD;&#xD55C;&#xB2E4;. &#xC804;&#xCCB4; pod&#xC5D0; &#xC801;&#xC6A9;&#xB418;&#xB2C8; &#xD55C; &#xBC88;&#xB9CC; &#xC785;&#xB825;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.</p>
+
+<p>pod&#xC758; &#xAE30;&#xBCF8; &#xC778;&#xCF54;&#xB529;&#xC740; US-ASCII&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD55C;&#xAE00;&#xC774; &#xAE68;&#xC838;&#xBC84;&#xB9B0;&#xB2E4;. =encoding utf8&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74; &#xD574;&#xACB0;&#xB41C;&#xB2E4;.</p>
+
+<a href="#_podtop_"><h1 id="Formatting">Formatting</h1></a>
+
+<p>&#xD14D;&#xC2A4;&#xD2B8;&#xC5D0; &#xBCFC;&#xB4DC;, &#xB9C1;&#xD06C; &#xB4F1;&#xC758; &#xCD94;&#xAC00;&#xC801;&#xC778; &#xD6A8;&#xACFC;&#xB97C; &#xB123;&#xC5B4;&#xC900;&#xB2E4;.</p>
+
+<h2 id="Itext-Btext-Ctext-Ltext-scheme:...-Eescape">I&lt;text&gt;, B&lt;text&gt;, C&lt;text&gt;, L&lt;text|scheme:...&gt;, E&lt;escape&gt;</h2>
+
+<p>&#xAC01;&#xAC01; <i>italic</i>, <b>bold</b>, <code>code</code>, <a target=_blank href="http://www.blog_villain.com">link</a>, <code><b>&lt;</b></code> (=E&lt;escape&gt;)&#xC744; &#xB098;&#xD0C0;&#xB0B8;&#xB2E4;.</p>
+
+<p>&#xC774; &#xC678;&#xC758; formatting&#xC740; <a target=_blank href="https://perldoc.perl.org/perlpod.html#Formatting-Codes">&#xC5EC;&#xAE30;</a>&#xC5D0;&#xC11C; &#xD655;&#xC778;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
 
 
 </body>
