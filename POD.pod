@@ -77,7 +77,7 @@ pod의 기본 인코딩은 US-ASCII이기 때문에 한글이 깨져버린다. =
 
 =head2 IE<lt>textE<gt>, BE<lt>textE<gt>, CE<lt>textE<gt>, LE<lt>text|scheme:...E<gt>, EE<lt>escapeE<gt>
 
-각각 I<italic>, B<bold>, C<code>, L<link|http://www.blog_villain.com>, C<< B<E<lt>> >> (=EE<lt>escapeE<gt>)을 나타낸다.
+각각 I<italic>, B<bold>, C<code>, L<link|http://www.BlogVillain.com>, C<< B<E<lt>> >> (=EE<lt>escapeE<gt>)을 나타낸다.
  
 이 외의 formatting은 L<여기|https://perldoc.perl.org/perlpod.html#Formatting-Codes>에서 확인할 수 있다.
 

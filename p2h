@@ -4,7 +4,6 @@ use strict;
 use warnings;
 
 my @input = @ARGV;
-
 die "Number of arguments ".scalar(@input) if scalar(@input) != 1;
 
 my @options = qw[
