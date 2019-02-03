@@ -1,0 +1,12 @@
+=encoding utf8
+=pod
+
+=head1 hello
+
+
+
+	asd
+	asd
+	asd
+
+=cut

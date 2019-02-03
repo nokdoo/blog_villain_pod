@@ -1,0 +1,44 @@
+$VAR1 = [
+          'Document',
+          {
+            'start_line' => 1
+          },
+          [
+            'head1',
+            {
+              'start_line' => 4
+            },
+            'hello'
+          ],
+          [
+            'Verbatim',
+            {
+              'xml:space' => 'preserve',
+              'start_line' => 8
+            },
+            '        asd
+        asd
+        asd'
+          ]
+        ];
+$VAR1 = [
+          'head1',
+          {
+            'start_line' => 4
+          },
+          'hello'
+        ];
+$VAR1 = 'hello';
+$VAR1 = [
+          'Verbatim',
+          {
+            'xml:space' => 'preserve',
+            'start_line' => 8
+          },
+          '        asd
+        asd
+        asd'
+        ];
+$VAR1 = '        asd
+        asd
+        asd';
