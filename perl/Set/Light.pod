@@ -1,0 +1,27 @@
+=encoding utf8
+=pod
+
+=head1 NAME
+
+Set::Light - 메모리 효율적인 문자열의 순서없는 set
+
+	use Set::Light;
+
+	my $set = Set::Light->new( qw/foo bar baz/ );
+
+	if (!$set->is_empty())
+	{
+		print "Set has ", $set->size(), " elements.\n";
+		for (qw/umpf foo bar baz bam/)
+		{
+			print "Set does ";
+			print " not " unless $set->has($_);
+			print "contain '$_'.\n";
+		}
+	}
+
+=head1 DESCRIPTION
+
+Set::Light는 문자열의 순서없는 set을 구현한다. 해시에서 
+
+=cut
