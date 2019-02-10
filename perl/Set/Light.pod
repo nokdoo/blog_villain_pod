@@ -3,7 +3,7 @@
 
 =head1 NAME
 
-Set::Light - 메모리 효율적인 문자열의 순서없는 set
+Set::Light - 문자열의 메모리 효율적인 set
 
 	use Set::Light;
 
