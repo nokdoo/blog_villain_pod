@@ -49,14 +49,14 @@ p {
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
+.index_of_post {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
 }
 
 /* Main column */
-.main {
+.content_of_post {
   flex: 70%;
   background-color: white;
   padding: 20px;
