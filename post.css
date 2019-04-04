@@ -55,6 +55,11 @@ p {
   padding: 20px;
 }
 
+.box_of_index {
+  position: sticky;
+  top: 20px;
+}
+
 /* Main column */
 .content_of_post {
   flex: 70%;
