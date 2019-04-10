@@ -3,7 +3,7 @@
 
 =head1 NAME
 
-Moo - Moose와 호환되는 Monimalist Object Orientation
+Moo - Moose와 호환되는 Minimalist Object Orientation
 
 =head1 SYNOPSIS
 
