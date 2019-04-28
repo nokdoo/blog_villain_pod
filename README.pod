@@ -1,0 +1,6 @@
+=encoding utf8
+=pod
+
+=head1 Deprecated
+
+=cut
